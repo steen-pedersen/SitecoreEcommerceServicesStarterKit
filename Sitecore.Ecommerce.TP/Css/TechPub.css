@@ -1,0 +1,36 @@
+﻿body
+{
+    background-color: cornflowerblue;
+}
+
+#right div
+{
+    width: 150px;
+    margin: 5px;
+    background-color: blueviolet;
+}
+
+#left div
+{
+    width: 200px;
+    margin: 5px;
+    background-color: darkseagreen;
+}
+
+#center div
+{
+    width: 456px;
+    margin: 5px;
+    background-color: powderblue;
+}
+
+#main
+{
+    width: 800px;
+}
+
+ul li a
+{
+    color: black;
+    text-decoration: none;
+}

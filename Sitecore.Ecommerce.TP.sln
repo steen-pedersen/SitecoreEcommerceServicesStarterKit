@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Ecommerce.TP", "Sitecore.Ecommerce.TP\Sitecore.Ecommerce.TP.csproj", "{A58E3427-436E-43AA-B450-E57781A7CF42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Ecommerce.TP.Model", "Sitecore.Ecommerce.TP.Model\Sitecore.Ecommerce.TP.Model.csproj", "{1DECC849-FE38-442E-9508-34C3906FEAD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A58E3427-436E-43AA-B450-E57781A7CF42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A58E3427-436E-43AA-B450-E57781A7CF42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A58E3427-436E-43AA-B450-E57781A7CF42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A58E3427-436E-43AA-B450-E57781A7CF42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DECC849-FE38-442E-9508-34C3906FEAD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DECC849-FE38-442E-9508-34C3906FEAD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DECC849-FE38-442E-9508-34C3906FEAD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DECC849-FE38-442E-9508-34C3906FEAD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

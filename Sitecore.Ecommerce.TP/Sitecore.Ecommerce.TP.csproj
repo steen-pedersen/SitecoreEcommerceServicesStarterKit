@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A58E3427-436E-43AA-B450-E57781A7CF42}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.Ecommerce.TP</RootNamespace>
+    <AssemblyName>Sitecore.Ecommerce.TP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Analytics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Ecommerce.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.DomainModel">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Ecommerce.DomainModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Kernel">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Ecommerce.Kernel.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Merchant">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Ecommerce.Merchant.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Ecommerce.Visitor">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Ecommerce.Visitor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Core">
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\inetpub\wwwroot\tp\Website\bin\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Dms\Conditions\BasketTotalExVat.cs" />
+    <Compile Include="Classes\Dms\Conditions\ProductInBasket.cs" />
+    <Compile Include="Classes\Dms\Conditions\ShippingProviderSelected.cs" />
+    <Compile Include="Classes\Dms\Conditions\TotalProductsInBasket.cs" />
+    <Compile Include="Classes\Helpers\AbandonedCart.cs" />
+    <Compile Include="Classes\Helpers\PriceHelper.cs" />
+    <Compile Include="Classes\Wffm\Actions\AddToBasketAction.cs" />
+    <Compile Include="Layouts\Layouts\TechPub Default.aspx.cs">
+      <DependentUpon>TechPub Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Layouts\TechPub Default.aspx.designer.cs">
+      <DependentUpon>TechPub Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\Checkout\BasketDataFiller.ascx.cs">
+      <DependentUpon>BasketDataFiller.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\Checkout\BasketDataFiller.ascx.designer.cs">
+      <DependentUpon>BasketDataFiller.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\MyBasketService.asmx.cs">
+      <DependentUpon>MyBasketService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub Header.ascx.cs">
+      <DependentUpon>TechPub Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub Header.ascx.designer.cs">
+      <DependentUpon>TechPub Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub LeftMenu.ascx.cs">
+      <DependentUpon>TechPub LeftMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub LeftMenu.ascx.designer.cs">
+      <DependentUpon>TechPub LeftMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub Product.ascx.cs">
+      <DependentUpon>TechPub Product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub Product.ascx.designer.cs">
+      <DependentUpon>TechPub Product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub SmallCart.ascx.cs">
+      <DependentUpon>TechPub SmallCart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\TechPub SmallCart.ascx.designer.cs">
+      <DependentUpon>TechPub SmallCart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\UnityCheck.ascx.cs">
+      <DependentUpon>UnityCheck.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Sublayouts\UnityCheck.ascx.designer.cs">
+      <DependentUpon>UnityCheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Ecommerce.TP.Model\Sitecore.Ecommerce.TP.Model.csproj">
+      <Project>{1decc849-fe38-442e-9508-34c3906fead4}</Project>
+      <Name>Sitecore.Ecommerce.TP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\TechPub.css" />
+    <Content Include="js\MyFunctions.js" />
+    <Content Include="Layouts\Layouts\TechPub Default.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\Sublayouts\Checkout\BasketDataFiller.ascx" />
+    <Content Include="Layouts\Sublayouts\MyBasketService.asmx" />
+    <Content Include="Layouts\Sublayouts\TechPub Header.ascx" />
+    <Content Include="Layouts\Sublayouts\TechPub LeftMenu.ascx" />
+    <Content Include="Layouts\Sublayouts\TechPub Product.ascx" />
+    <Content Include="Layouts\Sublayouts\TechPub SmallCart.ascx" />
+    <Content Include="Layouts\Sublayouts\UnityCheck.ascx" />
+    <Content Include="Xsl\Content.xslt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Web.Config" />
+    <None Include="Web.Debug.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+    <None Include="Web.Release.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59114/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

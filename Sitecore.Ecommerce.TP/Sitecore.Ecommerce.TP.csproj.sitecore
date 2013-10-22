@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <Site Server="http://tp" UserName="sitecore\admin" IsRemoteSitecore="True" />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Layouts\Layouts\TechPub Default.aspx" FileTimestamp="635034340122833492" FileSize="2325" ServerTimestamp="635034340232215364" ServerFileSize="2325">
+      <Item DatabaseName="master">{0C3AC617-4719-4F3A-81E2-2CABA2CA6033}</Item>
+    </File>
+    <File Include="Layouts\Sublayouts\TechPub LeftMenu.ascx" FileTimestamp="635034288820365386" FileSize="321" ServerTimestamp="635034300451718499" ServerFileSize="321">
+      <Item DatabaseName="master">{8D299882-57DE-4D5C-86AD-AD91F20C961B}</Item>
+    </File>
+    <File Include="Layouts\Sublayouts\TechPub Product.ascx" FileTimestamp="635034340933135520" FileSize="609" ServerTimestamp="635034340933135520" ServerFileSize="609" IsConflict="True" ConflictResolution="NotResolved">
+      <Item DatabaseName="master">{BB4A1A63-8B3C-497F-9C28-4CF49EEB5969}</Item>
+    </File>
+    <File Include="Layouts\Sublayouts\TechPub Header.ascx" FileTimestamp="635034343901137452" FileSize="354" ServerTimestamp="635034343963443682" ServerFileSize="354">
+      <Item DatabaseName="master">{A65C5C54-CD21-45C3-BB6A-C083E33DFE72}</Item>
+    </File>
+    <File Include="Layouts\Sublayouts\TechPub SmallCart.ascx" FileTimestamp="635034287183801746" FileSize="264" ServerTimestamp="635034364538481074" ServerFileSize="331" IsConflict="True" ConflictResolution="NotResolved">
+      <Item DatabaseName="master">{E9542737-DE72-4DF0-95F3-84C8BB054366}</Item>
+    </File>
+    <File Include="Layouts\Sublayouts\Checkout\BasketDataFiller.ascx" FileTimestamp="635035162182054147" FileSize="271" ServerTimestamp="635035210660534686" ServerFileSize="271">
+      <Item DatabaseName="master">{FA2D16A4-696F-4EC9-BE97-EAA2652AB88B}</Item>
+    </File>
+  </ItemGroup>
+</Project>
